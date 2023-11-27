@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8Kp9xl26UgklYCOvyysPPze2wglhSaRo6nabahYkkDSd6700B9aMwm9PBz5T3YA08/RnmnblzB1ha+sc/DmZyw==",
+  "success": true,
+  "projectFilePath": "D:\\USP\\Jupiter\\RipFeijao\\RipFeijao.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GABRIEL\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\GABRIEL\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -6,7 +6,7 @@ using System.Globalization;
 
 unsafe
 {
-    var bitmap = new Bitmap("D:\\USP\\Jupiter\\CroppedAndRemoved.png");
+    var bitmap = new Bitmap("D:\\Coding\\FeijaoRip\\CroppedAndRemoved.png");
     
     var stride = 0;
     var width = bitmap.Width;
@@ -41,13 +41,13 @@ unsafe
             *(ptr + pixelIndex) = (uint)(a << 24) | (pixel & 0x00FFFFFF);
         }
     }
-
+    
     (int pixel, double value) firstXScale = (0, 0);
     (int pixel, double value) lastXScale = (0, 0);
     
     (int pixel, double value) firstYScale = (xaxis, 0.01d);
     (int pixel, double value) lastYScale = (10, 1d);
-    
+
     var power = 0.01d;
     var scaleCnt = 1;
     var isInScaleBar = false;
@@ -70,6 +70,41 @@ unsafe
             scaleCnt = 1;
         }
     }
+
+    var offsets = new int[] { -1, 0, 1 };
+    
+    /*for (var y = 4; y < xaxis; y++)
+    {
+        for (var x = yaxis; x < width - 2; x++)
+        {
+            var centerPixel = *(ptr + (y * stride + x));
+            
+            var redNeighbors = 0;
+            var greenNeighbors = 0;
+            var blueNeighbors = 0;
+            foreach (var yOff in offsets)
+            {
+                foreach (var xOff in offsets)
+                {
+                    var pixelIndex = (y + yOff) * stride + (x + xOff);
+                    var pixel = *(ptr + pixelIndex);
+                    
+                    if ((pixel & 0xFF000000) == 0) continue;
+                    
+                    if ((pixel & 0x00FF0000) != 0) redNeighbors++;
+                    if ((pixel & 0x0000FF00) != 0) greenNeighbors++;
+                    if ((pixel & 0x000000FF) != 0) blueNeighbors++;
+
+                    if (redNeighbors > 5)
+                        *(ptr + pixelIndex) |= (uint)0xFFFF0000;
+                    else if (greenNeighbors > 5)
+                        *(ptr + pixelIndex) |= (uint)0xFF00FF00;
+                    else if (blueNeighbors > 5)
+                        *(ptr + pixelIndex) |= (uint)0xFF0000FF;
+                }
+            }
+        }
+    }*/
 
     var points = new (double p, double x, double r, double g, double b)[2*(width-yaxis)];
     
@@ -152,9 +187,14 @@ unsafe
             select (p.x, r: Math.Clamp(p.r, 0, 1), g: Math.Clamp(p.g, 0, 1), b: Math.Clamp(p.b, 0, 1)))
         .ToList();
 
-    Console.WriteLine($"X. two. one. half");
-    foreach (var p in treatedPoints)
+    Console.WriteLine("X. two. one. half");
+    for (var index = 0; index < treatedPoints.Count - 1; index++)
     {
+        var p = treatedPoints[index];
+
+        //if (p.r - treatedPoints[index + 1].r > 0.08)
+        //    p.r = (p.r + treatedPoints[index + 1].r + treatedPoints[index - 1].r) / 3;  
+        
         Console.WriteLine($"{p.x}. {p.r}. {p.g}. {p.b}", CultureInfo.InvariantCulture);
     }
 
@@ -167,5 +207,5 @@ unsafe
     }
 
     bitmap.UnlockBits(imageData);
-    bitmap.Save("D:\\USP\\Jupiter\\FeijaoAlphaCulled.png");
+    bitmap.Save("D:\\Coding\\FeijaoRip\\FeijaoAlphaCulled.png");
 }

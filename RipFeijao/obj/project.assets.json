@@ -128,23 +128,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\GABRIEL\\.nuget\\packages\\": {},
+    "C:\\Users\\gabri\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\USP\\Jupiter\\RipFeijao\\RipFeijao.csproj",
+      "projectUniqueName": "D:\\Coding\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
       "projectName": "RipFeijao",
-      "projectPath": "D:\\USP\\Jupiter\\RipFeijao\\RipFeijao.csproj",
-      "packagesPath": "C:\\Users\\GABRIEL\\.nuget\\packages\\",
-      "outputPath": "D:\\USP\\Jupiter\\RipFeijao\\obj\\",
+      "projectPath": "D:\\Coding\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "D:\\Coding\\FeijaoRip\\RipFeijao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\GABRIEL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -183,7 +183,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -192,7 +193,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.320\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.417\\RuntimeIdentifierGraph.json"
       }
     }
   }

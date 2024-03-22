@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gnWJlyRZiuX0Txr2LiG6Y0f2OwHaXYyMqKk8Agy7OroXLKutFs1eGm4G6dyxPNa9W3DFSqfAR/wti8F5f8HjMg==",
+  "dgSpecHash": "ZKN/5Nlr8gyrpsLbXPqkdZS+2kB1IXJP7NxnbUb0C+xBOACOudQhAwdnkLNN1MpLO8MfXpQq3dTk+8eB+fSc0g==",
   "success": true,
-  "projectFilePath": "D:\\Coding\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
+  "projectFilePath": "D:\\Coding\\Jupiter\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"

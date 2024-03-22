@@ -6,7 +6,7 @@ using System.Globalization;
 
 unsafe
 {
-    var bitmap = new Bitmap("D:\\Coding\\FeijaoRip\\CroppedAndRemoved.png");
+    var bitmap = new Bitmap("D:\\Coding\\Jupiter\\FeijaoRip\\CroppedAndRemoved.png");
     
     var stride = 0;
     var width = bitmap.Width;
@@ -175,7 +175,10 @@ unsafe
         }
         
         points[dx] = (xValue, 100*xValue/100, minRed, minGreen, minBlue);
-        points[width-yaxis+dx] = (100*xValue, 100*xValue, maxRed, maxGreen, maxBlue);
+        if (100*xValue < 1 || 100*xValue > 10)
+            points[width-yaxis+dx] = (100*xValue, 100*xValue, maxRed, maxGreen, maxBlue);
+        else
+            points[width-yaxis+dx] = (100*xValue, 100*xValue, -1, -1, -1);
         
         //Console.WriteLine($"Pixel: {x}, Value: {xValue}, {minRed} {maxRed}  {minGreen} {maxGreen}  {minBlue} {maxBlue}");
     }
@@ -207,5 +210,5 @@ unsafe
     }
 
     bitmap.UnlockBits(imageData);
-    bitmap.Save("D:\\Coding\\FeijaoRip\\FeijaoAlphaCulled.png");
+    bitmap.Save("D:\\Coding\\Jupiter\\FeijaoRip\\FeijaoAlphaCulled.png");
 }

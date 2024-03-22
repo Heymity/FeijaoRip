@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Coding\\FeijaoRip\\RipFeijao\\RipFeijao.csproj": {}
+    "D:\\Coding\\Jupiter\\FeijaoRip\\RipFeijao\\RipFeijao.csproj": {}
   },
   "projects": {
-    "D:\\Coding\\FeijaoRip\\RipFeijao\\RipFeijao.csproj": {
+    "D:\\Coding\\Jupiter\\FeijaoRip\\RipFeijao\\RipFeijao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Coding\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
+        "projectUniqueName": "D:\\Coding\\Jupiter\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
         "projectName": "RipFeijao",
-        "projectPath": "D:\\Coding\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
+        "projectPath": "D:\\Coding\\Jupiter\\FeijaoRip\\RipFeijao\\RipFeijao.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "D:\\Coding\\FeijaoRip\\RipFeijao\\obj\\",
+        "outputPath": "D:\\Coding\\Jupiter\\FeijaoRip\\RipFeijao\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
